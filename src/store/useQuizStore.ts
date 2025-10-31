@@ -20,7 +20,7 @@ interface QuizState {
 
 const useQuizStore = create<QuizState>((set) => ({
     currentQuestion: 0,
-    answers: Array(3).fill(null),
+    answers: [],
     score: 0,
     showScore: false,
 
@@ -146,9 +146,9 @@ const useQuizStore = create<QuizState>((set) => ({
     })),
 
     resetQuiz: () =>
-    set(() => ({
+    set((state) => ({
         currentQuestion: 0,
-        answers: Array(3).fill(null),
+        answers: Array(state.questions.length).fill(null),
         score: 0,
         showScore: false,
     })),
