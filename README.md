@@ -1,69 +1,91 @@
-# React + TypeScript + Vite
+# QuizMaster - Premium React Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+QuizMaster is a modern, visually stunning quiz application built with React, TypeScript, and Tailwind CSS. It features a premium user interface with glassmorphism effects, smooth animations, and a responsive design that works beautifully on all devices.
 
-Currently, two official plugins are available:
+![QuizMaster Splash Screen](file:///home/shuaibu/.gemini/antigravity/brain/9aa83c6e-62a5-486f-8313-5afaad780143/uploaded_image_1766976771328.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **Aesthetic Splash Screen**: A visually engaging animated entry point with a custom loading bar.
+- **Modern UI/UX**: Premium glassmorphism design system with a vibrant indigo and slate palette.
+- **Interactive Quiz Journey**: Real-time progress tracking, smooth transitions, and refined question cards.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop with vertical stacking on smaller screens.
+- **TypeScript Powered**: Robust and type-safe codebase.
+- **Fast Performance**: Built with Vite for an ultra-fast development experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Frontend**: React 19
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: React Icons
+- **State Management**: Zustand
+- **Build Tool**: Vite
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🏁 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ShuaibuPassionateProgrammer/react-quiz-app-advance-ts.git
+   cd react-quiz-app-advance-ts
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**:
+   Navigate to `http://localhost:5173` to see the app in action.
+
+## 📖 Usage
+
+- **Start the Quiz**: Once the app loads, the splash screen will transition to the main quiz interface.
+- **Answer Questions**: Select the best option for each question.
+- **Navigate**: Use the "Next" and "Previous" buttons to move through the quiz.
+- **View Results**: Complete all questions to see your final score and performance summary.
+
+## 📁 Project Structure
+
+```text
+src/
+├── assets/          # Static assets
+├── components/      # Reusable UI components
+│   ├── Question.tsx # Main quiz question component
+│   ├── Sidebar.tsx  # Progress tracking sidebar
+│   ├── SplashScreen.tsx # Animated entry screen
+│   └── ...
+├── store/           # State management with Zustand
+├── App.tsx          # Root application component
+└── main.tsx         # Entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🤝 Contributing
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Contributions are welcome! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+Built with ❤️ by [Shuaibu](https://github.com/ShuaibuPassionateProgrammer)
+

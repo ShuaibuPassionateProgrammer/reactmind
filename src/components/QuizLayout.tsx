@@ -3,9 +3,11 @@ import Question from "./Question";
 
 const QuizLayout = () => {
     return (
-        <div className="flex h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
-            <Sidebar />
-            <div className="flex-1 flex items-center justify-center overflow-y-auto">
+        <div className="flex flex-col lg:flex-row min-h-screen bg-slate-50 p-4 gap-4">
+            <div className="w-full lg:w-1/4">
+                <Sidebar />
+            </div>
+            <div className="flex-1 flex items-center justify-center overflow-y-auto py-8">
                 <Question />
             </div>
         </div>
