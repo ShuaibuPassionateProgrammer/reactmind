@@ -2,7 +2,7 @@
 
 QuizMaster is a modern, visually stunning quiz application built with React, TypeScript, and Tailwind CSS. It features a premium user interface with glassmorphism effects, smooth animations, and a responsive design that works beautifully on all devices.
 
-![QuizMaster Splash Screen](file:///home/shuaibu/.gemini/antigravity/brain/9aa83c6e-62a5-486f-8313-5afaad780143/uploaded_image_1766976771328.png)
+![QuizMaster Splash Screen](public/quiz-preview.png)
 
 ## 🚀 Features
 
