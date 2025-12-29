@@ -33,8 +33,8 @@ QuizMaster is a modern, visually stunning quiz application built with React, Typ
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/ShuaibuPassionateProgrammer/react-quiz-app-advance-ts.git
-   cd react-quiz-app-advance-ts
+   git clone https://github.com/ShuaibuPassionateProgrammer/reactmind.git
+   cd reactmind
    ```
 
 2. **Install dependencies**:
